@@ -1,0 +1,13 @@
+Package: LCRFsim
+Title: Lung Cancer Risk Factor Simulator (LCRFsim)
+Version: 0.9.7.00
+Authors@R: 
+	c(person("Eric", "Chow", email = "echow8@stanford.edu", role = c("aut", "anl")) ,
+	person("Summer", "Han", email = "summerh@stanford.edu", role = c("aut", "cre")) )
+Description: This package was developed to generate risk factors for lung cancer, conditioned on smoking history. These risk factors include BMI, personal history, family history, and COPD.  The smoking histories can be simulated using the Smoking History Generator (SHG), a program maintained by CISNET.  This package contains a wrapper to run the SHG, and functions to simulate the set of correlated risk factors for lung cancer from the SHG cohort, given gender, and the year of birth of the cohort. Updated to include models for the 1950 and 1960 cohorts.
+Depends: R (>= 3.5.0)
+License: GPL
+Encoding: UTF-8
+LazyData: TRUE
+Imports: splines
+RoxygenNote: 6.1.1
