@@ -27,12 +27,12 @@ cohort (as an output_19X0.out file), you can process that using processSHG() to 
 }
 \examples{
 library(LCRFsim)
+library(splines)
 runSHG("~/SHG3.6.4", 10000, "M", 1950, 1) # runs SHG to create output_1950.out in SHG directory
 smoking_history <- processSHG(file = "~/SHG3.6.4/output_1950.out", birth_cohort = 1950)
 data(smkhist) # or you can load a sample processed SHG output of 10K men born in 1950
 ANS_m <- riskFactorSimulator(gender="M", birth_cohort = 1950, SHG_out = smkhist, ages = 45:90, seed = 1618)
 summary(ANS_m$outputOnly[,1:5]) # look at results of simulation
-diagnosticPlots(gender = "M", birth_cohort=1950, ANS_m$outputOnly) # diagnostic plots
 }
 \keyword{birth}
 \keyword{cohort}

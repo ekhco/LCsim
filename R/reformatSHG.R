@@ -1,14 +1,13 @@
-#' Reformats Smoking History Generator Output
-#'
-#' This function takes a SHG output from runSHG() and reformats it by longitudinal age. It can take some time to run. It returns these columns: cigday, cigyears, cigstat, for each age in the range of ages. It is called internally by riskFactorSimulator(), and was not intended for direct use by the user. see riskFactorSimulator().
-#' @param ages              the range of ages for each person in the SHG cohort (ie: 45:90)
-#' @param DAT               The SHG output data, see runSHG()
-#' @keywords                reformat smoking history generator cigday cigyears citstat ages DAT
-#' @export
-#' @examples
-#' SHG_output <- runSHG(100, gender="M", 1950, 1)
-#' ages <- 45:90
-#' reformatted_SHG_output <- reformatSHG(ages, SHG_output)
+# Reformats Smoking History Generator Output
+#
+# This function takes a SHG output from runSHG() and reformats it by longitudinal age. It can take some time to run. It returns these columns: cigday, cigyears, cigstat, for each age in the range of ages. It is called internally by riskFactorSimulator(), and was not intended for direct use by the user. see riskFactorSimulator().
+# @param ages              the range of ages for each person in the SHG cohort (ie: 45:90)
+# @param DAT               The SHG output data, see runSHG()
+# @keywords                reformat smoking history generator cigday cigyears citstat ages DAT
+# @examples
+# SHG_output <- runSHG(100, gender="M", 1950, 1)
+# ages <- 45:90
+# reformatted_SHG_output <- reformatSHG(ages, SHG_output)
 
 reformatSHG=function(ages,DAT){
         cat("reformatting SHG data ...\n")

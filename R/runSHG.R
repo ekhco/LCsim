@@ -1,17 +1,16 @@
-#' Custom SHG Call
-#'
-#' The SHG is written in Python and is maintained seperately from this package by CISNET.
-#' This function writes a custom "run_tests.py" into the current director for the SHG so
-#' that only selected birth cohort years can be run instead of all of the 1890 - 2110 range
-#' that is hardcoded into the current run_tests.py distributed with SHG 6.3.4. This function
-#' is called by runSHG() and does not need to be called directly. It creates a python script
-#' in the SHG directory, called 'run_custom_tests.py'
-#' @param birth_cohort       the year of birth for the cohort (ie: 1950)
-#' @keywords                 smoking history generator run_tests
-#' @export
-#' @examples
-#' setwd("~/SHG/") # navigate to the SHG directory first
-#' SHG_output <- makeCustomRun(birth_cohort = 1950)
+# Custom SHG Call
+#
+# The SHG is written in Python and is maintained seperately from this package by CISNET.
+# This function writes a custom "run_tests.py" into the current director for the SHG so
+# that only selected birth cohort years can be run instead of all of the 1890 - 2110 range
+# that is hardcoded into the current run_tests.py distributed with SHG 6.3.4. This function
+# is called by runSHG() and does not need to be called directly. It creates a python script
+# in the SHG directory, called 'run_custom_tests.py'
+# @param birth_cohort       the year of birth for the cohort (ie: 1950)
+# @keywords                 smoking history generator run_tests
+# @examples
+# setwd("~/SHG/") # navigate to the SHG directory first
+# SHG_output <- makeCustomRun(birth_cohort = 1950)
 makeCustomRun <- function(birth_cohort) {
   # working directory should have been set as SHG directory before this
 

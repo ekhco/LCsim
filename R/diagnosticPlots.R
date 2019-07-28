@@ -1,15 +1,14 @@
-#' Creates diagnostic plots
-#'
-#' This function creates diagnostic plots after the SHG, and LC simulation have been ran.
-#' @param riskFactorSimulator_out           The output after simulating the risk factors
-#' @param gender            either "F" for female or "M" for male
-#' @param birth_cohort      the year of birth of the cohort
-#' @keywords                diagnostic plot plots
-#' @export
-#' @examples
-#' SHG_out <- runSHG(100, gender="M", 1950, 1)
-#' ANS_f <- riskFactorSimulator(gender="F", birth_cohort = 1950, SHG_out = SHG_out, ages = 45:90, seed = 1)
-#' diagnosticPlots(gender="M", 1950, riskFactorSimulator_out = ANS_f$outputOnly)
+# Creates diagnostic plots
+#
+# This function creates diagnostic plots after the SHG, and LC simulation have been ran.
+# @param riskFactorSimulator_out           The output after simulating the risk factors
+# @param gender            either "F" for female or "M" for male
+# @param birth_cohort      the year of birth of the cohort
+# @keywords                diagnostic plot plots
+# @examples
+# SHG_out <- runSHG(100, gender="M", 1950, 1)
+# ANS_f <- riskFactorSimulator(gender="F", birth_cohort = 1950, SHG_out = SHG_out, ages = 45:90, seed = 1)
+# diagnosticPlots(gender="M", 1950, riskFactorSimulator_out = ANS_f$outputOnly)
 
 diagnosticPlots <- function(gender, birth_cohort, riskFactorSimulator_out){
 

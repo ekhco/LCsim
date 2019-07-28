@@ -1,12 +1,11 @@
-#' Creates Smoking histories
-#'
-#' This function post-processes the SHG output. It is called by processSHG.R, after decompose_output_files.py has processed the SHG outputs. It reads the people_ages_mat.txt, people_cpd_mat.txt, and people_mat.txt files created by the decompose[...].py.  This function is not intended for direct use by the user, see processSHG().
-#' @param year               the year of birth for the cohort
-#' @keywords                 smoking history generator
-#' @export
-#' @examples
-#' setwd("~/SHG/") # navigate to the SHG directory first
-#' createSmokingHistories(year = 1950) # Do not run this code, see processSHG()
+# Creates Smoking histories
+#
+# This function post-processes the SHG output. It is called by processSHG.R, after decompose_output_files.py has processed the SHG outputs. It reads the people_ages_mat.txt, people_cpd_mat.txt, and people_mat.txt files created by the decompose[...].py.  This function is not intended for direct use by the user, see processSHG().
+# @param year               the year of birth for the cohort
+# @keywords                 smoking history generator
+# @examples
+# setwd("~/SHG/") # navigate to the SHG directory first
+# createSmokingHistories(year = 1950) # Do not run this code, see processSHG()
 
 createSmokingHistories <- function(year) {
 #for (year in seq(1890, 2100,by=10)){
